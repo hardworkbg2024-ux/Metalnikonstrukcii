@@ -3,41 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MWelding&Metal | Метални конструкции Петрич и Сандански</title>
+    <title>MWelding&Metal | Метални конструкции и термо панели Петрич и Сандански</title>
+    <meta name="description" content="Изработка и монтаж на метални конструкции и термо панели в Петрич, Сандански и региона. Къщи, халета, гаражи, покриви и навеси. Телефон: 089 728 4025">
+    <meta name="keywords" content="метални конструкции Петрич, термо панели Сандански, метални халета Петрич, гаражи Сандански, навеси, покриви, MWelding&Metal">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #f59e0b; --primary-dark: #d97706; --dark: #0f172a; --darker: #020617; --card-bg: #1e293b; --text-light: #f8fafc; --text-gray: #94a3b8; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
-        body { background-color: var(--darker); color: var(--text-light); line-height: 1.6; }
-        header { background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--text-light); text-decoration: none; display: flex; align-items: center; gap: 10px; }
-        .logo span { color: var(--primary); }
-        .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
-        .nav-links a { color: var(--text-gray); text-decoration: none; font-weight: 500; }
-        .phone-btn-nav { background: var(--primary); color: var(--darker); padding: 0.6rem 1.2rem; border-radius: 50px; font-weight: 700; text-decoration: none; }
-        .hero { height: 100vh; background: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.9)), url('FB_IMG_1792415109936.jpg') center/cover no-repeat; display: flex; align-items: center; text-align: center; padding: 0 1rem; margin-top: 70px; }
-        .hero-content { max-width: 900px; margin: 0 auto; }
-        .hero h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; }
-        .hero h1 span { color: var(--primary); }
-        .hero p { font-size: 1.2rem; color: var(--text-gray); margin-bottom: 2rem; }
-        .btn { padding: 0.9rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-block; }
-        .btn-primary { background: var(--primary); color: var(--darker); }
-        .section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: 2.3rem; margin-bottom: 3rem; font-weight: 800; }
-        .section-title span { color: var(--primary); }
-        .services-grid, .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-        .service-card { background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
-        .service-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
-        .gallery-item { border-radius: 12px; overflow: hidden; height: 260px; background: #000; }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
-        .contact-box { background: var(--card-bg); border-radius: 16px; padding: 2.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        footer { background: var(--dark); text-align: center; padding: 2rem; color: var(--text-gray); }
-        @media (max-width: 768px) { .nav-links { display: none; } .hero h1 { font-size: 2.1rem; } }
+        :root {
+            --primary: #f59e0b;
+            --primary-dark: #d97706;
+            --dark: #0f172a;
+            --darker: #020617;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-gray: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--darker);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .phone-btn-nav {
+            background: var(--primary);
+            color: var(--darker);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .phone-btn-nav:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.9)), url('FB_IMG_1792415120921.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 70px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--darker);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            color: white;
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--text-light);
+            color: var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-light);
+            color: var(--darker);
+        }
+
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 3rem;
+            font-weight: 800;
+        }
+
+        .section-title span {
+            color: var(--primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 280px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background: #000;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .contact-box {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-top: 4px;
+        }
+
+        .contact-item div h4 {
+            font-size: 1rem;
+            color: var(--text-gray);
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-item div p, .contact-item div a {
+            color: var(--text-light);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact-item div a:hover {
+            color: var(--primary);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background: var(--dark);
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-gray);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.9rem;
+        }
+
+        #lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 2rem;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 8px;
+        }
+
+        #lightbox.active {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.1rem; }
+        }
     </style>
 </head>
 <body>
+
     <header>
         <div class="nav-container">
             <a href="#" class="logo"><i class="fa-solid fa-industry" style="color: var(--primary);"></i> MWelding<span>&Metal</span></a>
@@ -47,7 +377,9 @@
                 <li><a href="#gallery">Галерия</a></li>
                 <li><a href="#contact">Контакти</a></li>
             </ul>
-            <a href="tel:0897284025" class="phone-btn-nav"><i class="fa-solid fa-phone"></i> 089 728 4025</a>
+            <a href="tel:0897284025" class="phone-btn-nav">
+                <i class="fa-solid fa-phone"></i> 089 728 4025
+            </a>
         </div>
     </header>
 
@@ -55,7 +387,10 @@
         <div class="hero-content">
             <h1>Изработка и монтаж на <span>метални конструкции</span> и термо панели</h1>
             <p>Професионални изработки за къщи, халета, гаражи, покриви и навеси в Петрич, Сандански и региона.</p>
-            <a href="#contact" class="btn btn-primary">Свържете се с нас</a>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Свържете се с нас</a>
+                <a href="#gallery" class="btn btn-secondary">Вижте наши обекти</a>
+            </div>
         </div>
     </section>
 
@@ -65,46 +400,18 @@
             <div class="service-card">
                 <i class="fa-solid fa-house-chimney"></i>
                 <h3>Къщи и халета</h3>
-                <p>Проектиране и изграждане на метални конструкции за сглобяеми къщи и халета.</p>
+                <p>Проектиране, заваряване и изграждане на метални конструкции за сглобяеми къщи, промишлени и търговски халета.</p>
             </div>
             <div class="service-card">
                 <i class="fa-solid fa-layer-group"></i>
                 <h3>Термо панели</h3>
-                <p>Монтаж на висококачествени термопанели за стени и покриви.</p>
+                <p>Монтаж на висококачествени термопанели за стени и покриви с отлична топлоизолация.</p>
             </div>
             <div class="service-card">
                 <i class="fa-solid fa-warehouse"></i>
-                <h3>Гаражи и навеси</h3>
-                <p>Изработка на метални гаражи, навеси за автомобили и тераси.</p>
+                <h3>Гаражи, покриви и навеси</h3>
+                <p>Изработка на метални гаражи, навеси за автомобили и тераси, ремонт и изграждане на покривни конструкции.</p>
             </div>
         </div>
-    </section>
-
-    <section id="gallery" class="section">
-        <h2 class="section-title">Галерия <span>Обекти</span></h2>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="FB_IMG_1792415109936.jpg" alt="Обект 1"></div>
-            <div class="gallery-item"><img src="FB_IMG_1792415113163.jpg" alt="Обект 2"></div>
-            <div class="gallery-item"><img src="FB_IMG_179241511828.jpg" alt="Обект 3"></div>
-            <div class="gallery-item"><img src="FB_IMG_1792415120921.jpg" alt="Обект 4"></div>
-            <div class="gallery-item"><img src="FB_IMG_1792415123299.jpg" alt="Обект 5"></div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h2 class="section-title">Контакти и <span>Запитвания</span></h2>
-        <div class="contact-box">
-            <div>
-                <h3>MWelding&Metal</h3>
-                <p><strong>Адрес:</strong> гр. Петрич, ул. Серска 13</p>
-                <p><strong>Телефони:</strong> <a href="tel:0897284025" style="color:var(--primary)">089 728 4025</a> / <a href="tel:0878990920" style="color:var(--primary)">0878 990 920</a></p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 MWelding&Metal. Петрич и Сандански.</p>
-    </footer>
-</body>
-    </html>
-    
+    </
+        
