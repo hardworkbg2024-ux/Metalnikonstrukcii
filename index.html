@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MWelding&Metal | Изработка и монтаж на метални конструкции и термо панели в Петрич и Сандански</title>
-    <meta name="description" content="Професионална изработка и монтаж на метални конструкции и термо панели в Петрич, Сандански и региона. Къщи, халета, гаражи, покриви, навеси. Телефон: 089 728 4025">
-    <meta name="keywords" content="метални конструкции Петрич, термо панели Сандански, метални халета, гаражи, покриви, навеси, сглобяеми къщи Петрич Сандански, MWelding&Metal">
+    <title>MWelding&Metal | Метални конструкции и термо панели Петрич и Сандански</title>
+    <meta name="description" content="Изработка и монтаж на метални конструкции и термо панели в Петрич, Сандански и региона. Къщи, халета, гаражи, покриви и навеси. Телефон: 089 728 4025">
+    <meta name="keywords" content="метални конструкции Петрич, термо панели Сандански, метални халета Петрич, гаражи Сандански, навеси, покриви, MWelding&Metal">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -17,7 +17,6 @@
             --card-bg: #1e293b;
             --text-light: #f8fafc;
             --text-gray: #94a3b8;
-            --accent: #38bdf8;
         }
 
         * {
@@ -105,10 +104,9 @@
             color: white;
         }
 
-        /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.85)), url('137704.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(2, 6, 23, 0.75), rgba(2, 6, 23, 0.9)), url('137704.jpg') center/cover no-repeat;
             display: flex;
             align-items: center;
             text-align: center;
@@ -174,7 +172,6 @@
             color: var(--darker);
         }
 
-        /* Services */
         .section {
             padding: 6rem 2rem;
             max-width: 1200px;
@@ -227,10 +224,9 @@
             font-size: 0.95rem;
         }
 
-        /* Gallery */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
         }
 
@@ -241,6 +237,7 @@
             height: 280px;
             cursor: pointer;
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background: #000;
         }
 
         .gallery-item img {
@@ -274,7 +271,6 @@
             font-size: 2rem;
         }
 
-        /* Contact Section */
         .contact-box {
             background: var(--card-bg);
             border-radius: 16px;
@@ -334,7 +330,6 @@
             border: 0;
         }
 
-        /* Footer */
         footer {
             background: var(--dark);
             text-align: center;
@@ -344,7 +339,6 @@
             font-size: 0.9rem;
         }
 
-        /* Lightbox modal */
         #lightbox {
             position: fixed;
             inset: 0;
@@ -374,7 +368,6 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo"><i class="fa-solid fa-industry" style="color: var(--primary);"></i> MWelding<span>&Metal</span></a>
@@ -390,70 +383,66 @@
         </div>
     </header>
 
-    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Изработка и монтаж на <span>метални конструкции</span> и термо панели</h1>
-            <p>Професионални решения за къщи, халета, гаражи, покриви и навеси в Петрич, Сандански и региона.</p>
+            <p>Професионални изработки за къщи, халета, гаражи, покриви и навеси в Петрич, Сандански и региона.</p>
             <div class="hero-btns">
                 <a href="#contact" class="btn btn-primary">Свържете се с нас</a>
-                <a href="#gallery" class="btn btn-secondary">Вижте обектите ни</a>
+                <a href="#gallery" class="btn btn-secondary">Вижте наши обекти</a>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
     <section id="services" class="section">
         <h2 class="section-title">Нашите <span>Услуги</span></h2>
         <div class="services-grid">
             <div class="service-card">
                 <i class="fa-solid fa-house-chimney"></i>
-                <h3>Метални къщи и халета</h3>
-                <p>Изработка и монтаж на здрави метални конструкции за жилищни сгради, промишлени и складови халета.</p>
+                <h3>Къщи и халета</h3>
+                <p>Проектиране, заваряване и изграждане на метални конструкции за сглобяеми къщи, промишлени и търговски халета.</p>
             </div>
             <div class="service-card">
                 <i class="fa-solid fa-layer-group"></i>
                 <h3>Термо панели</h3>
-                <p>Професионален монтаж на стенни и покривни термопанели с отлична топло и шумоизолация.</p>
+                <p>Монтаж на висококачествени термопанели за стени и покриви с отлична топлоизолация.</p>
             </div>
             <div class="service-card">
                 <i class="fa-solid fa-warehouse"></i>
-                <h3>Гаражи и навеси</h3>
-                <p>Индивидуални решения за гаражи, покриви и покривни конструкции, навеси за тераси и дворове.</p>
+                <h3>Гаражи, покриви и навеси</h3>
+                <p>Изработка на метални гаражи, навеси за автомобили и тераси, ремонт и изграждане на покривни конструкции.</p>
             </div>
         </div>
     </section>
 
-    <!-- Gallery -->
     <section id="gallery" class="section">
-        <h2 class="section-title">Реализирани <span>Обекти</span></h2>
+        <h2 class="section-title">Галерия <span>Обекти</span></h2>
         <div class="gallery-grid">
             <div class="gallery-item" onclick="openLightbox('137702.jpg')">
-                <img src="137702.jpg" alt="Метална конструкция Петрич">
+                <img src="137702.jpg" alt="Метална конструкция Петрич" onerror="this.src='https://via.placeholder.com/600x400?text=Снимка+1'">
                 <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <div class="gallery-item" onclick="openLightbox('137703.jpg')">
-                <img src="137703.jpg" alt="Монтаж на метални елементи">
+                <img src="137703.jpg" alt="Монтаж на метални елементи Сандански" onerror="this.src='https://via.placeholder.com/600x400?text=Снимка+2'">
                 <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <div class="gallery-item" onclick="openLightbox('137704.jpg')">
-                <img src="137704.jpg" alt="Изградена къща с термо панели Сандански">
+                <img src="137704.jpg" alt="Къща с термо панели" onerror="this.src='https://via.placeholder.com/600x400?text=Снимка+3'">
                 <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <div class="gallery-item" onclick="openLightbox('137705.jpg')">
-                <img src="137705.jpg" alt="Интериор с термопанели">
+                <img src="137705.jpg" alt="Интериор на конструкция" onerror="this.src='https://via.placeholder.com/600x400?text=Снимка+4'">
                 <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <div class="gallery-item" onclick="openLightbox('137706.jpg')">
-                <img src="137706.jpg" alt="Готов обект навес и термо панели">
+                <img src="137706.jpg" alt="Навес и гараж с термопанели" onerror="this.src='https://via.placeholder.com/600x400?text=Снимка+5'">
                 <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section">
-        <h2 class="section-title">Свържете се с <span>Нас</span></h2>
+        <h2 class="section-title">Контакти и <span>Запитвания</span></h2>
         <div class="contact-box">
             <div class="contact-info">
                 <h3>MWelding&Metal</h3>
@@ -461,4 +450,42 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <div>
                         <h4>Адрес</h4>
-                        <p>гр. Петрич, ул. Серска 13
+                        <p>гр. Петрич, ул. Серска 13<br><small>(Обслужваме Петрич, Сандански и целия регион)</small></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Телефони за връзка</h4>
+                        <p><a href="tel:0897284025">089 728 4025</a> / <a href="tel:0878990920">0878 990 920</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6!2d23.2!3d41.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTGlrZSBTZXJza2EgMTMsIFBldHJpY2g!5e0!3m2!1sbg!2sbg!4v1650000000000!5m2!1sbg!2sbg" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MWelding&Metal. Изработка и монтаж на метални конструкции и термо панели — Петрич и Сандански.</p>
+    </footer>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Голям преглед">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
